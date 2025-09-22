@@ -281,7 +281,6 @@
                          <p id="modal-description" class="text-sm md:text-base text-gray-300 leading-relaxed typing-text"></p>
                     </div>
                     <div class="flex flex-wrap justify-center md:justify-start space-x-4 mt-6">
-                         <a id="modal-repo" href="#" target="_blank" class="py-2 px-4 rounded-full bg-gray-700 text-gray-200 font-semibold transition-colors hover:bg-gray-600">GitHub Repo</a>
                          <a id="modal-demo" href="#" target="_blank" class="py-2 px-4 rounded-full bg-amber-400 text-gray-900 font-semibold transition-colors hover:bg-amber-500">Live Demo</a>
                     </div>
                 </div>
@@ -307,31 +306,30 @@
     
     <script>
         const projectsData = [
-            { "title": "mjoloapp", "description": "An application designed to help people with their dating life. This project features a clean, intuitive interface and uses modern web technologies to connect users. ", "repo_link": "#", "demo_link": "https://mjoloapp.netlify.app/" },
-            { "title": "apexseo", "description": "A website specializing in SEO services. It provides detailed information on how to optimize a website for search engines. ", "repo_link": "#", "demo_link": "https://apexseo.netlify.app/" },
-            { "title": "iwritewhatilike", "description": "A writing portfolio showcasing my articles and essays. The platform is built for fast content delivery and provides a seamless reading experience across all devices. ", "repo_link": "#", "demo_link": "https://iwritewhatilike.netlify.app/" },
-            { "title": "focusweb", "description": "A productivity website with tools to help users stay focused. It includes a Pomodoro timer and a minimalist dashboard to reduce distractions. ", "repo_link": "#", "demo_link": "https://focusweb.netlify.app/" },
-            { "title": "fundaniapp", "description": "An app for managing personal finances and investments. The app offers secure tracking and insightful visualizations of financial data. ", "repo_link": "#", "demo_link": "https://fundaniapp.netlify.app/" },
-            { "title": "nomsasalon", "description": "A website for a local hair salon. The site features a gallery of their work and an easy-to-use booking system for appointments. ", "repo_link": "#", "demo_link": "http://nomsasalon.netlify.app/" },
-            { "title": "weathershaman", "description": "A weather application that provides detailed forecasts. This project utilizes a weather API to deliver accurate, real-time weather information with a clean, animated interface. ", "repo_link": "#", "demo_link": "https://weathershaman.netlify.app/" },
-            { "title": "flovemanifesto", "description": "A digital manifesto exploring themes of love and connection. It's a single-page, scroll-driven narrative with unique typography and visual effects. ", "repo_link": "#", "demo_link": "https://flovemanifesto.netlify.app/" },
-            { "title": "vocabvortex", "description": "A vocabulary-building game for language learners. The game uses spaced repetition and interactive elements to make learning new words fun and effective. ", "repo_link": "#", "demo_link": "https://vocabvortex.netlify.app/" },
-            { "title": "html5dojo", "description": "A tutorial website for learning HTML5. The platform offers a structured curriculum with interactive code editors and progress tracking. ", "repo_link": "#", "demo_link": "https://html5dojo.netlify.app/" },
-            { "title": "carletonvilleschoollunches", "description": "An application to manage school lunch menus and orders. The app simplifies the process for parents and school staff with a streamlined interface. ", "repo_link": "#", "demo_link": "https://carletonvilleschoollunches.netlify.app/" },
-            { "title": "mphomaphoso", "description": "A construction company site I built for a client. It showcases their completed projects and provides an easy way for potential clients to get in touch. ", "repo_link": "#", "demo_link": "https://maphosoholdings.netlify.app/" },
-            { "title": "tpautoassist", "description": "A corporate gig for a client. This web application helps manage internal processes and team workflows. ", "repo_link": "#", "demo_link": "https://tpautoassist.netlify.app/" },
-            { "title": "prayerchanges", "description": "A site built for a local church. It serves as a digital hub with service times, events, and a blog. ", "repo_link": "#", "demo_link": "https://prayerchanges.netlify.app/submit-prayer" },
-            { "title": "skotch-marketing", "description": "My personal company that specialises in Digital Marketing and helping people optimise their LinkedIn profiles, ATS-friendly resumes and we help people apply for jobs (FREE). The site provides resources and contact information for professional services. ", "repo_link": "#", "demo_link": "http://skotch-marketing.netlify.app/" },
-            { "title": "jobtool", "description": "A job search tracking tool. Users can log applications, track interview progress, and manage their job search from a centralized dashboard. ", "repo_link": "#", "demo_link": "http://jobtool.netlify.app/" },
-            { "title": "biblebioapp", "description": "An educational app for learning about biblical figures. The app provides profiles, timelines, and interactive quizzes to help users learn. ", "repo_link": "#", "demo_link": "https://biblebioapp.netlify.app/" },
-            { "title": "maphosoholdings", "description": "A website for a holding company I built for a client. The site is a clean and professional corporate web presence with an overview of their various ventures. ", "repo_link": "#", "demo_link": "https://maphosoholdings.netlify.app/" },
+            { "title": "mjoloapp", "description": "An application designed to help people with their dating life. This project features a clean, intuitive interface and uses modern web technologies to connect users. ", "demo_link": "https://mjoloapp.netlify.app/" },
+            { "title": "apexseo", "description": "A website specializing in SEO services. It provides detailed information on how to optimize a website for search engines. ", "demo_link": "https://apexseo.netlify.app/" },
+            { "title": "iwritewhatilike", "description": "A writing portfolio showcasing my articles and essays. The platform is built for fast content delivery and provides a seamless reading experience across all devices. ", "demo_link": "https://iwritewhatilike.netlify.app/" },
+            { "title": "focusweb", "description": "A productivity website with tools to help users stay focused. It includes a Pomodoro timer and a minimalist dashboard to reduce distractions. ", "demo_link": "https://focusweb.netlify.app/" },
+            { "title": "fundaniapp", "description": "An app for managing personal finances and investments. The app offers secure tracking and insightful visualizations of financial data. ", "demo_link": "https://fundaniapp.netlify.app/" },
+            { "title": "nomsasalon", "description": "A website for a local hair salon. The site features a gallery of their work and an easy-to-use booking system for appointments. ", "demo_link": "http://nomsasalon.netlify.app/" },
+            { "title": "weathershaman", "description": "A weather application that provides detailed forecasts. This project utilizes a weather API to deliver accurate, real-time weather information with a clean, animated interface. ", "demo_link": "https://weathershaman.netlify.app/" },
+            { "title": "flovemanifesto", "description": "A digital manifesto exploring themes of love and connection. It's a single-page, scroll-driven narrative with unique typography and visual effects. ", "demo_link": "https://flovemanifesto.netlify.app/" },
+            { "title": "vocabvortex", "description": "A vocabulary-building game for language learners. The game uses spaced repetition and interactive elements to make learning new words fun and effective. ", "demo_link": "https://vocabvortex.netlify.app/" },
+            { "title": "html5dojo", "description": "A tutorial website for learning HTML5. The platform offers a structured curriculum with interactive code editors and progress tracking. ", "demo_link": "https://html5dojo.netlify.app/" },
+            { "title": "carletonvilleschoollunches", "description": "An application to manage school lunch menus and orders. The app simplifies the process for parents and school staff with a streamlined interface. ", "demo_link": "https://carletonvilleschoollunches.netlify.app/" },
+            { "title": "mphomaphoso", "description": "A construction company site I built for a client. It showcases their completed projects and provides an easy way for potential clients to get in touch. ", "demo_link": "https://maphosoholdings.netlify.app/" },
+            { "title": "tpautoassist", "description": "A corporate gig for a client. This web application helps manage internal processes and team workflows. ", "demo_link": "https://tpautoassist.netlify.app/" },
+            { "title": "prayerchanges", "description": "A site built for a local church. It serves as a digital hub with service times, events, and a blog. ", "demo_link": "https://prayerchanges.netlify.app/submit-prayer" },
+            { "title": "skotch-marketing", "description": "My personal company that specialises in Digital Marketing and helping people optimise their LinkedIn profiles, ATS-friendly resumes and we help people apply for jobs (FREE). The site provides resources and contact information for professional services. ", "demo_link": "http://skotch-marketing.netlify.app/" },
+            { "title": "jobtool", "description": "A job search tracking tool. Users can log applications, track interview progress, and manage their job search from a centralized dashboard. ", "demo_link": "http://jobtool.netlify.app/" },
+            { "title": "biblebioapp", "description": "An educational app for learning about biblical figures. The app provides profiles, timelines, and interactive quizzes to help users learn. ", "demo_link": "https://biblebioapp.netlify.app/" },
+            { "title": "maphosoholdings", "description": "A website for a holding company I built for a client. The site is a clean and professional corporate web presence with an overview of their various ventures. ", "demo_link": "https://maphosoholdings.netlify.app/" },
         ];
 
         const projectsContainer = document.querySelector('.projects-container');
         const modal = document.getElementById('project-modal');
         const modalTitle = modal.querySelector('#modal-title');
         const modalDescription = modal.querySelector('#modal-description');
-        const modalRepo = modal.querySelector('#modal-repo');
         const modalDemo = modal.querySelector('#modal-demo');
         const modalImage = modal.querySelector('#modal-image');
         let currentTypingIndex = 0;
@@ -367,7 +365,6 @@
 
             modalTitle.textContent = project.title;
             modalDescription.textContent = '';
-            modalRepo.href = project.repo_link;
             modalDemo.href = project.demo_link;
             modalImage.src = placeholderImageUrl;
 
